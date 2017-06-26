@@ -1,1 +1,1 @@
-web: /.prova1
+web: ./prova1
