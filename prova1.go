@@ -31,6 +31,6 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/", HomeHandler)
-	http.ListenAndServe(":8080", r)
+	http.ListenAndServe(":5000", r)
 	fmt.Print("Serving and listening at port 8080")
 }
