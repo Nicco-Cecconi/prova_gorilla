@@ -1,0 +1,9 @@
+{
+	"comment": "",
+	"ignore": "",
+	"rootPath": "github.com/heroku/Gorilla",
+    "heroku": {
+        "install" : [ "./..." ],
+        "goVersion": "go1.6"
+         }
+}
