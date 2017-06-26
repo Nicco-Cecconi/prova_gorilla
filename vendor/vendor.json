@@ -1,9 +1,29 @@
 {
 	"comment": "",
+	"heroku": {
+		"goVersion": "go1.6",
+		"install": [
+			"./..."
+		]
+	},
 	"ignore": "",
-	"rootPath": "github.com/heroku/Gorilla",
-    "heroku": {
-        "install" : [ "./..." ],
-        "goVersion": "go1.6"
-         }
+	"package": [
+		{
+			"path": "context",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "Thg9sicXr23/02y0VqmmJoEZIzI=",
+			"path": "github.com/gorilla/context",
+			"revision": "08b5f424b9271eedf6f9f0ce86cb9396ed337a42",
+			"revisionTime": "2016-08-17T18:46:32Z"
+		},
+		{
+			"checksumSHA1": "RDA6UdZwy736wwTHxXt+WYPPQKg=",
+			"path": "github.com/gorilla/mux",
+			"revision": "8c683ee571b6ee7ffc9f1cafd13103c422e71cbf",
+			"revisionTime": "2017-06-21T21:27:26Z"
+		}
+	],
+	"rootPath": "github.com/heroku/Gorilla"
 }
