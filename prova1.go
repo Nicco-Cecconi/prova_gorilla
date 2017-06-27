@@ -34,6 +34,5 @@ func main() {
 	r.HandleFunc("/", HomeHandler)
 	port := strconv.FormatInt(8080, 10)
 	fmt.Print("Serving and listening at port 8080")
-	http.ListenAndServe(":"+port, r)
-
+	http.ListenAndServe("10.0.2.15:"+port, r)
 }
