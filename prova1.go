@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"io/ioutil"
 	"net/http"
+	"strconv"
 
 	"github.com/gorilla/mux"
 )
@@ -31,6 +32,8 @@ func HomeHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/", HomeHandler)
-	http.ListenAndServe(":5000", r)
+	port := strconv.FormatInt(8080, 10)
 	fmt.Print("Serving and listening at port 8080")
+	http.ListenAndServe(":"+port, r)
+
 }
