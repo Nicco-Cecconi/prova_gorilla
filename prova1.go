@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"io/ioutil"
 	"net/http"
@@ -37,6 +38,7 @@ func main() {
 	if port == "" {
 		port = "8080"
 	}
+	fmt.Print(port)
 	http.ListenAndServe(":"+port, r)
 
 }
