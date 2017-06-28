@@ -1,6 +1,151 @@
-<h1>Editing {{.Title}}</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>big scrolling table example</TITLE>
+</HEAD>
 
-<form action="/save/{{.Title}}" method="POST">
-<div><textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea></div>
-<div><input type="submit" value="Save"></div>
-</form>
+<BODY>
+  <form name="MyForm" method="POST" action="">
+    <!-- static size header junk--><!-- static size header junk--><!-- static size header junk-->
+    <table border="1" width="100%" cellspacing="1" cellpadding="0" align="center">
+    <tr>
+    <td width="35%" align="left">header junk left</td>
+    <td >- HEADER JUNK MIDDLE -</td>
+    <td width="35%" align="right">header junk right</td>
+    </tr>
+    </table>
+    <br>
+    <table border="0" width="95%" cellspacing="1" cellpadding="0" align="center">
+    <tr>
+    <td width="60%" align="left">header junk left</td>
+    <td width="40%" align="right">check it out! <input type="checkbox" onchange="alert('your javascript here');" value="Y" name="checkitout"></td>
+    </tr>
+
+
+    <!-- big table here!!--><!-- big table here!!--><!-- big table here!!--><!-- big table here!!-->
+
+    <table border="1" width="95%" cellspacing="1" cellpadding="0" align="center">
+    <tr>
+    <td>fixed can be long<br>or short</td>
+    <td colspan="4">scroll A</td>
+    <td colspan="2">scroll B</td>
+    <td >scroll C</td>
+    <td colspan="4">scroll D</td>
+    <td colspan="2">scroll E</td>
+    <td >scroll F</td>
+    <td colspan="4">scroll G</td>
+    <td colspan="2">scroll H</td>
+    <td >scroll I</td>
+    <td colspan="4">scroll J</td>
+    <td colspan="2">scroll K</td>
+    <td >scroll L</td>
+    <td colspan="4">scroll M</td>
+    <td colspan="2">scroll N</td>
+    <td >scroll O</td>
+    </tr>
+
+    <tr>
+        <td>fixed 2</td>
+        <td>1 1 1 1 1 A</td><td>2 2 2 2 2 A</td><td>3 3 3 3 3 A</td><td>4 4 4 4 4 A</td>
+        <td>1 B</td><td>2 B</td>
+        <td >1 C</td>
+        <td>1 D</td><td>2 D</td><td>3 D</td><td>4 D<br>more...</td>
+        <td>1 E</td><td>2 E</td>
+        <td >1 F</td>
+        <td>1 1 1 G</td><td>2 2 G</td><td>3 G</td><td>4 4 4 4 G</td>
+        <td>1 H</td><td>222 H</td>
+        <td >1 I</td>
+        <td>1 J</td><td>2 J</td><td>3 J</td><td>4 J</td>
+        <td>1 K</td><td>2 2 K<br>more..<br>more..</td>
+        <td >1 L</td>
+        <td>1 M</td><td>22 M</td><td>333 M</td><td>4444 M</td>
+        <td>1 N</td><td>2 N</td>
+        <td >1 1 1 1 1 1 1 O</td>
+    </tr>
+    <tr>
+        <td>fixed 3</td>
+        <td>1 1 1 1 1 A</td><td>2 2 2 2 2 A</td><td>3 3 3 3 3 A</td><td>4 4 4 4 4 A</td>
+        <td>1 B</td><td>2 B</td>
+        <td >1 C</td>
+        <td>1 D</td><td>2 D</td><td>3 D</td><td>4 D<br>more...</td>
+        <td>1 E</td><td>2 E</td>
+        <td >1 F</td>
+        <td>1 1 1 G</td><td>2 2 G</td><td>3 G</td><td>4 4 4 4 G</td>
+        <td>1 H</td><td>222 H</td>
+        <td >1 I</td>
+        <td>1 J</td><td>2 J</td><td>3 J</td><td>4 J</td>
+        <td>1 K</td><td>2 2 K<br>more..<br>more..</td>
+        <td >1 L</td>
+        <td>1 M</td><td>22 M</td><td>333 M</td><td>4444 M</td>
+        <td>1 N</td><td>2 N</td>
+        <td >1 1 1 1 1 1 1 O</td>
+    </tr>
+    <tr>
+        <td>fixed 4</td>
+        <td>1 1 1 1 1 A</td><td>2 2 2 2 2 A</td><td>3 3 3 3 3 A</td><td>4 4 4 4 4 A</td>
+        <td>1 B</td><td>2 B</td>
+        <td >1 C</td>
+        <td>1 D</td><td>2 D</td><td>3 D</td><td>4 D<br>more...<br>more...<br>more...<br>more...</td>
+        <td>1 E</td><td>2 E</td>
+        <td >1 F</td>
+        <td>1 1 1 G</td><td>2 2 G</td><td>3 G</td><td>4 4 4 4 G</td>
+        <td>1 H</td><td>222 H</td>
+        <td >1 I</td>
+        <td>1 J</td><td>2 J</td><td>3 J</td><td>4 J</td>
+        <td>1 K</td><td>2 2 K<br>more..<br>more..</td>
+        <td >1 L</td>
+        <td>1 M</td><td>22 M</td><td>333 M</td><td>4444 M</td>
+        <td>1 N</td><td>2 N</td>
+        <td >1 1 1 1 1 1 1 O</td>
+    </tr>
+    <tr>
+        <td>fixed 5</td>
+        <td>1 1 1 1 1 A</td><td>2 2 2 2 2 A</td><td>3 3 3 3 3 A</td><td>4 4 4 4 4 A</td>
+        <td>1 B</td><td>2 B</td>
+        <td >1 C</td>
+        <td>1 D</td><td>2 D</td><td>3 D</td><td>4 D<br>more...</td>
+        <td>1 E</td><td>2 E</td>
+        <td >1 F</td>
+        <td>1 1 1 G</td><td>2 2 G</td><td>3 G</td><td>4 4 4 4 G</td>
+        <td>1 H</td><td>222 H<br>H<br>H<br>H<br>H</td>
+        <td >1 I</td>
+        <td>1 J</td><td>2 J</td><td>3 J</td><td>4 J</td>
+        <td>1 K</td><td>2 2 K<br>more..<br>more..</td>
+        <td >1 L</td>
+        <td>1 M</td><td>22 M</td><td>333 M</td><td>4444 M</td>
+        <td>1 N</td><td>2 N</td>
+        <td >1 1 1 1 1 1 1 O</td>
+    </tr>
+    <tr>
+        <td>fixed 6<br>6<br>6<br>6</td>
+        <td>1 1 1 1 1 A</td><td>2 2 2 2 2 A</td><td>3 3 3 3 3 A</td><td>4 4 4 4 4 A</td>
+        <td>1 B</td><td>2 B</td>
+        <td >1 C</td>
+        <td>1 D</td><td>2 D</td><td>3 D</td><td>4 D<br>more...</td>
+        <td>1 E</td><td>2 E</td>
+        <td >1 F</td>
+        <td>1 1 1 G</td><td>2 2 G</td><td>3 G</td><td>4 4 4 4 G</td>
+        <td>1 H</td><td>222 H</td>
+        <td >1 I</td>
+        <td>1 J</td><td>2 J</td><td>3 J</td><td>4 J</td>
+        <td>1 K</td><td>2 2 K<br>more..<br>more..</td>
+        <td >1 L</td>
+        <td>1 M</td><td>22 M</td><td>333 M</td><td>4444 M</td>
+        <td>1 N</td><td>2 N</td>
+        <td >1 1 1 1 1 1 1 O</td>
+    </tr>
+
+    </table>
+
+
+    <!-- static size footer junk--><!-- static size footer junk--><!-- static size footer junk--><!-- static size footer junk-->
+    <table border="1" width="100%" cellspacing="1" cellpadding="0" align="center">
+    <tr>
+    <td width="35%" align="left">footer junk left</td>
+    <td >- FOOTER JUNK MIDDLE -</td>
+    <td width="35%" align="right">footer junk right</td>
+    </tr>
+
+  </form>
+</BODY>
+</HTML>
